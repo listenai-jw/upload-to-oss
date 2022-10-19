@@ -12,7 +12,8 @@ const fg = require('fast-glob');
     const opts = {
       accessKeyId: core.getInput('key-id'),
       accessKeySecret: core.getInput('key-secret'),
-      bucket: core.getInput('bucket')
+      bucket: core.getInput('bucket'),
+      secure: true
     }
 
     ;['region', 'endpoint']
