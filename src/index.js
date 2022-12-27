@@ -13,7 +13,8 @@ const fg = require('fast-glob');
       accessKeyId: core.getInput('key-id'),
       accessKeySecret: core.getInput('key-secret'),
       bucket: core.getInput('bucket'),
-      secure: true
+      secure: true,
+      timeout: '10m'
     }
 
     ;['region', 'endpoint']
